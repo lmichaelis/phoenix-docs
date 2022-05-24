@@ -1,0 +1,26 @@
+site_name: ZenGin Reference
+theme:
+  name: material
+  palette:
+    primary: red
+    scheme: slate
+  features:
+    - content.code.annotate
+markdown_extensions:
+  - admonition
+  - footnotes
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.details
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.betterem:
+      smart_enable: all
+  - toc
+  - pymdownx.tabbed:
+      alternate_style: true
+extra_css:
+  - stylesheets/extra.css
+

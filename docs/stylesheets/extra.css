@@ -1,0 +1,11 @@
+:root > * {
+    --md-default-bg-color: #222222;
+    --md-code-bg-color: #282828;
+}
+
+.md-typeset .md-annotation__index > ::before {
+    content: attr(data-md-annotation-id);
+}
+.md-typeset :focus-within > .md-annotation__index > ::before {
+    transform: none;
+}
