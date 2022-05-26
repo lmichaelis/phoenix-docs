@@ -2,6 +2,11 @@
 Font (or *FNT*) files contain metadata of fonts for use with the *ZenGin*. *FNT* files only contain font metadata which
 points into a TGA file containing the actual font glyphs.
 
+!!! important
+    *FNT* files are binary files which are always encoded with the little-endian byte order. The number `0xCAFEBABE`
+    will be represented as `BE BA FE CA` when viewing the file in a hex editor.
+
+
 Font files are structured like this:
 
 ```c title="Font file structure"
